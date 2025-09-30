@@ -202,6 +202,17 @@ searchInput.addEventListener('input', (event) => {
     }
 });
 
+searchInput.addEventListener('input', (event) => {
+    const searchQuery = event.target.value.trim();
+
+    if (searchQuery.length > 0) {
+        filterDropdown.disabled = true;
+        filterDropdown.selectedIndex = 0;
+    } else {
+        filterDropdown.disabled = false;
+    }
+});
+
 filterDropdown.addEventListener('change', handleFilterChange);
 window.addEventListener('load', onLoad);
 
