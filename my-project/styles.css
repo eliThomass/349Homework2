@@ -54,6 +54,7 @@ body, html {
     width: 100%;
     background-color: #f4f4f4;
     padding-top: 25px;
+    padding-bottom: 20px;
     gap: 20px;
 }
 
@@ -74,6 +75,7 @@ body, html {
     width: 100%;
     height: auto;
     border-radius: 15px;
+    aspect-ratio: 2 / 3;
 }
 
 .movie-card h3 {
@@ -90,8 +92,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    gap: 30px;
+    gap: 20px;
     font-size: 15px;
     background-color: #f4f4f4;
 }
@@ -108,6 +109,11 @@ body, html {
     padding: 10px;
 }
 
+#nextPageBtn:hover {
+    background-color: #256fa1;
+    cursor: pointer;
+}
+
 #prevPageBtn {
     padding: 5px;
     width: auto;
@@ -122,3 +128,11 @@ body, html {
     padding-right: 15px;
 }
 
+#prevPageBtn:hover {
+    background-color: #256fa1;
+    cursor: pointer;
+}
+
+#pageInfo {
+    font-size: 20px;
+}
